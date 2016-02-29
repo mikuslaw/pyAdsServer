@@ -1,42 +1,12 @@
+# Ads commands
+## ADS Read Write
 
-<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-
-
-
-
-
-<title>ADS Read Write</title><meta http-equiv="content-type" content="text/html; charset=utf-8" /><meta http-equiv="content-language" content="en" /><meta http-equiv="date" content="635699232000000000" /><meta name="generator" content="onlineInfoSysConverter" /><link rel="stylesheet" type="text/css" href="../../../../css/infosys.css" /><script src="../../../../includes/styles.js" type="text/javascript" language="JavaScript"></script><meta name="description" content="With ADS Read Write data will be written to an ADS device ..." /><meta name="product" content="TwinCAT Connectivity" /><meta name="category" content="TwinCAT System" /><meta name="productgroup" content="TwinCAT 2" /><meta name="microsoft_help" content="ADS Read Write, ADS, Read Write, ADS,Read Write" /></head>
-<body>
-<table class="buttonbartable" cellspacing="0">
-<tr id="hdr">
-<td class="runninghead">TwinCAT ADS/AMS - Specification</td>
-</tr>
-</table>
-<h1>ADS Read Write</h1>
-
-<p>With <i>ADS Read</i> <i>Write</i> data will be written to an ADS
+With ADS Read Write data will be written to an ADS
 device. Additionally, data can be read from the ADS device.</p>
-<p>The data which can be read are addressed by the <i>Index
-Group</i> and the <i>Index Offset</i> </p>
-<h2>Request</h2>
-<p><img border="0" src="../images/AdsReadWriteRequest.jpg" width="520" height="260" alt="AdsReadWriteRequest" /></p>
-<table width="100%">
-<tr valign="top">
-<th align="left" width="15%" valign="bottom">Data array</th>
-<th align="left" width="10%" valign="bottom">Size</th>
-<th align="left" width="75%">Description</th>
-</tr>
-<tr valign="top">
-<td width="15%"><i>Index Group</i></td>
-<td width="10%">4 bytes</td>
-<td width="75%">Index Group, in which the data should be
-written.</td>
-</tr>
-<tr valign="top">
-<td width="15%"><i>Index Offset</i></td>
-<td width="10%">4 bytes</td>
+
+### Request
+Index Group 4 bytes Index Group, in which the data should be written.
+Index Offset 4 bytes
 <td width="75%">Index Offset, in which the data should be
 written</td>
 </tr>
