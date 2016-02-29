@@ -1,1 +1,132 @@
+Global Error Codes
 
+Hex	Description
+0x0	no error
+0x1	Internal error
+0x2	No Rtime
+0x3	Allocation locked memory error
+0x4	Insert mailbox error
+0x5	Wrong receive HMSG
+0x6	target port not found
+0x7	target machine not found
+0x8	Unknown command ID
+0x9	Bad task ID
+0xA	No IO
+0xB	Unknown ADS command
+0xC	Win 32 error
+0xD	Port not connected
+0xE	Invalid ADS length
+0xF	Invalid ADS Net ID
+0x10	Low Installation level
+0x11	No debug available
+0x12	Port disabled
+0x13	Port already connected
+0x14	ADS Sync Win32 error
+0x15	ADS Sync Timeout
+0x16	ADS Sync AMS error
+0x17	ADS Sync no index map
+0x18	Invalid ADS port
+0x19	No memory
+0x1A	TCP send error
+0x1B	Host unreachable
+0x1C	Invalid AMS fragment
+	
+Router Error Codes		
+Hex	Name	Description
+0x500	ROUTERERR_NOLOCKEDMEMORY	No locked memory can be allocated
+0x501	ROUTERERR_RESIZEMEMORY	The size of the router memory could not be changed
+0x502	ROUTERERR_MAILBOXFULL	The mailbox has reached the maximum number of possible messages. The current sent message was rejected
+0x503	ROUTERERR_DEBUGBOXFULL	The mailbox has reached the maximum number of possible messages. The sent message will not be displayed in the debug monitor.
+0x504	ROUTERERR_UNKNOWNPORTTYPE	Unknown port type
+0x505	ROUTERERR_NOTINITIALIZED	Router is not initialized
+0x506	ROUTERERR_PORTALREADYINUSE	The desired port number is already assigned
+0x507	ROUTERERR_NOTREGISTERED	Port not registered
+0x508	ROUTERERR_NOMOREQUEUES	The maximum number of Ports reached
+0x509	ROUTERERR_INVALIDPORT	Invalid port
+0x50A	ROUTERERR_NOTACTIVATED	TwinCAT Router not active
+
+
+General ADS Error Codes		
+Hex	Name	Description
+0x700	ADSERR_DEVICE_ERROR	error class <device error>
+0x701	ADSERR_DEVICE_SRVNOTSUPP	Service is not supported by server
+0x702	ADSERR_DEVICE_INVALIDGRP	invalid index group
+0x703	ADSERR_DEVICE_INVALIDOFFSET	invalid index offset
+0x704	ADSERR_DEVICE_INVALIDACCESS	reading/writing not permitted
+0x705	ADSERR_DEVICE_INVALIDSIZE	parameter size not correct
+0x706	ADSERR_DEVICE_INVALIDDATA	invalid parameter value(s)
+0x707	ADSERR_DEVICE_NOTREADY	device is not in a ready state
+0x708	ADSERR_DEVICE_BUSY	device is busy
+0x709	ADSERR_DEVICE_INVALIDCONTEXT	invalid context (must be in Windows)
+0x70A	ADSERR_DEVICE_NOMEMORY	out of memory
+0x70B	ADSERR_DEVICE_INVALIDPARM	invalid parameter value(s)
+0x70C	ADSERR_DEVICE_NOTFOUND	not found (files, ...)
+0x70D	ADSERR_DEVICE_SYNTAX	syntax error in command or file
+0x70E	ADSERR_DEVICE_INCOMPATIBLE	objects do not match
+0x70F	ADSERR_DEVICE_EXISTS	object already exists
+0x710	ADSERR_DEVICE_SYMBOLNOTFOUND	symbol not found
+0x711	ADSERR_DEVICE_SYMBOLVERSIONINVAL	symbol version invalid
+0x712	ADSERR_DEVICE_INVALIDSTATE	server is in invalid state
+0x713	ADSERR_DEVICE_TRANSMODENOTSUPP	AdsTransMode not supported
+0x714	ADSERR_DEVICE_NOTIFYHNDINVALID	Notification handle is invalid
+0x715	ADSERR_DEVICE_CLIENTUNKNOWN	Notification client not registered
+0x716	ADSERR_DEVICE_NOMOREHDLS	no more notification handles
+0x717	ADSERR_DEVICE_INVALIDWATCHSIZE	size for watch too big
+0x718	ADSERR_DEVICE_NOTINIT	device not initialized
+0x719	ADSERR_DEVICE_TIMEOUT	device has a timeout
+0x71A	ADSERR_DEVICE_NOINTERFACE	query interface failed
+0x71B	ADSERR_DEVICE_INVALIDINTERFACE	wrong interface required
+0x71C	ADSERR_DEVICE_INVALIDCLSID	class ID is invalid
+0x71D	ADSERR_DEVICE_INVALIDOBJID	object ID is invalid
+0x71E	ADSERR_DEVICE_PENDING	request is pending
+0x71F	ADSERR_DEVICE_ABORTED	request is aborted
+0x720	ADSERR_DEVICE_WARNING	signal warning
+0x721	ADSERR_DEVICE_INVALIDARRAYIDX	invalid array index
+0x722	ADSERR_DEVICE_SYMBOLNOTACTIVE	symbol not active
+0x723	ADSERR_DEVICE_ACCESSDENIED	access denied
+0x724	ADSERR_DEVICE_LICENSENOTFOUND	missing license
+0x725	ADSERR_DEVICE_LICENSEEXPIRED	license expired
+0x726	ADSERR_DEVICE_LICENSEEXCEEDED	license exceeded
+0x727	ADSERR_DEVICE_LICENSEINVALID	license invalid
+0x728	ADSERR_DEVICE_LICENSESYSTEMID	license invalid system id
+0x729	ADSERR_DEVICE_LICENSENOTIMELIMIT	license not time limited
+0x72A	ADSERR_DEVICE_LICENSEFUTUREISSUE	license issue time in the future
+0x72B	ADSERR_DEVICE_LICENSETIMETOLONG	license time period to long
+0x72c	ADSERR_DEVICE_EXCEPTION	exception occured during system start
+0x72D	ADSERR_DEVICE_LICENSEDUPLICATED	License file read twice
+0x72E	ADSERR_DEVICE_SIGNATUREINVALID	invalid signature
+0x72F	ADSERR_DEVICE_CERTIFICATEINVALID	public key certificate
+0x740	ADSERR_CLIENT_ERROR	Error class <client error>
+0x741	ADSERR_CLIENT_INVALIDPARM	invalid parameter at service
+0x742	ADSERR_CLIENT_LISTEMPTY	polling list is empty
+0x743	ADSERR_CLIENT_VARUSED	var connection already in use
+0x744	ADSERR_CLIENT_DUPLINVOKEID	invoke ID in use
+0x745	ADSERR_CLIENT_SYNCTIMEOUT	timeout elapsed
+0x746	ADSERR_CLIENT_W32ERROR	error in win32 subsystem
+0x747	ADSERR_CLIENT_TIMEOUTINVALID	Invalid client timeout value
+0x748	ADSERR_CLIENT_PORTNOTOPEN	ads-port not opened
+0x750	ADSERR_CLIENT_NOAMSADDR	internal error in ads sync
+0x751	ADSERR_CLIENT_SYNCINTERNAL	hash table overflow
+0x752	ADSERR_CLIENT_ADDHASH	key not found in hash
+0x753	ADSERR_CLIENT_REMOVEHASH	no more symbols in cache
+0x754	ADSERR_CLIENT_NOMORESYM	invalid response received
+0x755	ADSERR_CLIENT_SYNCRESINVALID	sync port is locked
+
+RTime Error Codes		
+Hex	Name	Description
+0x1000	RTERR_INTERNAL	Internal fatal error in the TwinCAT real-time system
+0x1001	RTERR_BADTIMERPERIODS	Timer value not vaild
+0x1002	RTERR_INVALIDTASKPTR	Task pointer has the invalid value ZERO
+0x1003	RTERR_INVALIDSTACKPTR	Task stack pointer has the invalid value ZERO
+0x1004	RTERR_PRIOEXISTS	The demand task priority is already assigned
+0x1005	RTERR_NOMORETCB	No more free TCB (Task Control Block) available. Maximum number of TCBs is 64
+0x1006	RTERR_NOMORESEMAS	No more free semaphores available. Maximum number of semaphores is 64
+0x1007	RTERR_NOMOREQUEUES	No more free queue available. Maximum number of queue is 64
+0x100D	RTERR_EXTIRQALREADYDEF	An external synchronization interrupt is already applied
+0x100E	RTERR_EXTIRQNOTDEF	No external synchronization interrupt applied
+0x100F	RTERR_EXTIRQINSTALLFAILED	The apply of the external synchronization interrupt failed
+0x1010	RTERR_IRQLNOTLESSOREQUAL	Call of a service function in the wrong context
+0x1017	RTERR_VMXNOTSUPPORTED	Intel VT-x extension is not supported
+0x1018	RTERR_VMXDISABLED	Intel VT-x extension is not enabled in system BIOS
+0x1019	RTERR_VMXCONTROLSMISSING	Missing function in Intel VT-x extension
+0x101A	RTERR_VMXENABLEFAILS	Enabling Intel VT-x fails
